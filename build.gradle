@@ -1,3 +1,13 @@
 wrapper {
   gradleVersion '4.3.1'
 }
+
+repositories {
+  mavenCentral()
+}
+
+apply plugin: com.kylemoore.MyPlugin
+
+myExtension {
+  GAV = 'systems.manifold:manifold-parent:0.12-alpha'
+}
